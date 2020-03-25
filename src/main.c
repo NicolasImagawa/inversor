@@ -89,7 +89,9 @@ int main(){
 	/*Print da matriz com palavras invertidas.
 	Como os espacos nao foram adicionados a matriz inicial, aqui tambem eh adicionado
 	um espaco em branco entre duas palavras.*/
-	for(x = 0; x <= row; x ++){
+	x = 0;
+
+	while (x <= row){
 		if(x < row){
 			printf("%s", out_str_vect[x]);
 			printf("%c", 32);
@@ -98,6 +100,7 @@ int main(){
 		else if(x == row){
 			printf("%s", out_str_vect[x]);
 		}
+		x = x + 1;
 	}
 	printf("\n");
 	return 0;
